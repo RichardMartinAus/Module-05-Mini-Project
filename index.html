@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Tracker v0.1</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+
+    <!-- Header for moment.js -->
+    <header id="header-element">
+        <h4>This is where the moment.js will go</h4>
+    </header>
+    <div class="container-main">
+        <!-- Aside modal -->
+        <div class="aside-modal">
+            
+            <!-- Bootstrap card -->
+            <div class="card">
+                <div class="card-body">
+                <h5 class="card-title">Project Tracker 0.1</h5>
+                <p class="card-text">Fill in the form below to add a new project to the table on the right. Once all inputs have been submitted you will be able to track your projects with ease!</p>
+                <a href="https://getbootstrap.com/docs/4.5/components/modal/" class="card-link">This page was created using Bootstrap</a>
+                </div>
+            </div>
+
+            <!-- Bootstrap form -->
+            <form>
+                <div class="form-group">
+                <label for="exampleFormControlInput1">Project Name:</label>
+                <input type="project-name" class="form-control" id="exampleFormControlInput1" placeholder="My project">
+                </div>
+                <div class="form-group">
+                <label for="exampleFormControlSelect1">Project Type:</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Code refactor</option>
+                    <option>Basic static page build</option>
+                    <option>Interactive JS build</option>
+                    <option>Online shopping app</option>
+                </select>
+                </div>
+                <div class="form-group">
+                <label for="exampleFormControlInput1">Hourly wage for project:</label>
+                <input type="rate" class="form-control" id="exampleFormControlInput1" placeholder="A$/hr">
+                </div>
+                <div class="form-group">
+                <label for="exampleFormControlInput1">Due date for project:</label>
+                <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="12-08-2021">
+                </div>
+                <input class="btn btn-primary" type="submit" value="Submit">
+                
+            </form>
+        </div>
+
+        <!-- Main table for information -->
+        <div class="main-table">
+            <!-- Bootstrap table -->
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Project name</th>
+                        <th scope="col">Project type</th>
+                        <th scope="col">Hourly wage</th>
+                        <th scope="col">Due date</th>
+                        <th scope="col">Days to due date</th>
+                        <th scope="col">Estimated total earned</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Horiseon SEO Code refactor</td>
+                        <td>Code refactor</td>
+                        <td>A$23.00</td>
+                        <td>15-08-2022</td>
+                        <td>XX</td>
+                        <td>XX</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Horiseon SEO Code refactor</td>
+                        <td>Code refactor</td>
+                        <td>A$23.00</td>
+                        <td>15-08-2022</td>
+                        <td>XX</td>
+                        <td>XX</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+    </div>
+
+    <!-- Added link to the jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+</body>
+</html>
